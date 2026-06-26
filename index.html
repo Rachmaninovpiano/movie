@@ -13,26 +13,64 @@
     <div class="movie-badge" id="movieBadge"></div>
   </header>
 
+  <nav class="tabs">
+    <button class="tab-btn active" data-tab="sample">📚 サンプル教材</button>
+    <button class="tab-btn" data-tab="import">✍️ 取り込み学習</button>
+  </nav>
+
   <main class="container">
-    <section class="controls">
-      <label class="toggle">
-        <input type="checkbox" id="hideTranslation" />
-        <span>練習モード（日本語訳を隠す）</span>
-      </label>
-      <p class="hint">セリフをクリックすると訳・解説が開きます</p>
+    <!-- サンプル教材タブ -->
+    <section id="tab-sample" class="tab-panel active">
+      <div class="controls">
+        <label class="toggle">
+          <input type="checkbox" id="hideTranslation" />
+          <span>練習モード（日本語訳を隠す）</span>
+        </label>
+        <p class="hint">セリフをクリックすると訳・解説が開きます</p>
+      </div>
+      <div id="sceneList" class="scene-list"></div>
+      <p class="loading" id="loading">読み込み中...</p>
     </section>
 
-    <section id="sceneList" class="scene-list">
-      <!-- セリフカードがここに描画されます -->
-    </section>
+    <!-- 取り込み学習タブ -->
+    <section id="tab-import" class="tab-panel">
+      <div class="import-intro">
+        <h2>セリフを貼り付けて自分の教材を作る</h2>
+        <p>映画のセリフ（英語）を下のボックスに貼り付けて「カードにする」を押すと、
+          1行ずつ <b>🔊 発音</b>・<b>📖 単語の辞書リンク</b>・<b>✍️ 自分用の訳メモ欄</b> 付きの
+          学習カードになります。書き込んだ訳やメモは、このブラウザに自動保存されます。</p>
+      </div>
 
-    <p class="loading" id="loading">読み込み中...</p>
+      <div class="import-box">
+        <textarea id="importText" placeholder="ここに英語のセリフを貼り付けてください（複数行OK）&#10;例：&#10;John: Let off some steam.&#10;Bennett: I feel good, Matrix!"></textarea>
+        <div class="import-actions">
+          <button id="parseBtn" class="btn-primary">カードにする</button>
+          <button id="clearBtn" class="btn-ghost">取り込みを全消去</button>
+          <label class="toggle small">
+            <input type="checkbox" id="appendMode" checked />
+            <span>追記する（既存のカードを残す）</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="import-toolbar" id="importToolbar" style="display:none;">
+        <span id="importCount" class="count"></span>
+        <label class="toggle small">
+          <input type="checkbox" id="hideMyTranslation" />
+          <span>練習モード（自分のメモを隠す）</span>
+        </label>
+      </div>
+
+      <div id="myCards" class="scene-list"></div>
+      <p class="empty" id="importEmpty">まだカードがありません。上のボックスに貼り付けて作成してください。</p>
+    </section>
   </main>
 
   <footer class="footer">
-    <p>英語初心者向け学習アプリ ｜ セリフは引用の範囲で収録し、訳・解説は独自に付記しています。</p>
+    <p>英語初心者向け学習アプリ ｜ サンプルのセリフは引用の範囲で収録し、訳・解説は独自に付記しています。取り込んだ内容は私的学習用にお使いください。</p>
   </footer>
 
   <script src="js/app.js"></script>
+  <script src="js/import.js"></script>
 </body>
 </html>

@@ -20,6 +20,22 @@ async function init() {
   document.getElementById("hideTranslation").addEventListener("change", (e) => {
     document.getElementById("sceneList").classList.toggle("hide-ja", e.target.checked);
   });
+
+  setupTabs();
+}
+
+// タブ切り替え
+function setupTabs() {
+  const buttons = document.querySelectorAll(".tab-btn");
+  buttons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const tab = btn.dataset.tab;
+      buttons.forEach((b) => b.classList.toggle("active", b === btn));
+      document.querySelectorAll(".tab-panel").forEach((p) => {
+        p.classList.toggle("active", p.id === `tab-${tab}`);
+      });
+    });
+  });
 }
 
 function renderBadge(meta) {
