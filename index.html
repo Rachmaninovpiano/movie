@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>映画で学ぶ英語 - コマンドー編</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>🎬 映画で学ぶ英語</h1>
+    <p class="subtitle">名作映画のセリフで、生きた英語を学ぼう</p>
+    <div class="movie-badge" id="movieBadge"></div>
+  </header>
+
+  <main class="container">
+    <section class="controls">
+      <label class="toggle">
+        <input type="checkbox" id="hideTranslation" />
+        <span>練習モード（日本語訳を隠す）</span>
+      </label>
+      <p class="hint">セリフをクリックすると訳・解説が開きます</p>
+    </section>
+
+    <section id="sceneList" class="scene-list">
+      <!-- セリフカードがここに描画されます -->
+    </section>
+
+    <p class="loading" id="loading">読み込み中...</p>
+  </main>
+
+  <footer class="footer">
+    <p>英語初心者向け学習アプリ ｜ セリフは引用の範囲で収録し、訳・解説は独自に付記しています。</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

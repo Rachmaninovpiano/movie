@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "movie": "Commando",
+    "year": 1985,
+    "note": "本データは英語学習を目的に、映画から短いセリフを引用の範囲で収録し、日本語訳と日常会話での使い方の注意点を独自に付記したものです。脚本の全文転載は行っていません。新しいセリフは scenes 配列に追記してください。",
+    "level": "beginner"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "title": "Sully との別れ際 / The promise",
+      "character": "John Matrix",
+      "line": "I lied.",
+      "translation": "嘘だったがな。",
+      "literal": "私は嘘をついた。",
+      "context": "「最後に殺す」と約束した相手に対して、約束を破って先に始末する直前のひと言。映画屈指の名台詞。",
+      "vocab": [
+        { "word": "lie", "pos": "動詞", "meaning": "嘘をつく", "note": "活用は lie - lied - lied。『横たわる』の lie (lie-lay-lain) と混同しやすいので注意。" }
+      ],
+      "usage_notes": [
+        "日常では I lied. は「ごめん、さっきのは嘘」と訂正する時に普通に使えます。例：I said I was busy, but I lied — I just didn't want to go.（忙しいって言ったけど嘘。ただ行きたくなかっただけ）",
+        "映画のように脅し文句として使うのは特殊な文脈。普段は冗談か軽い訂正のニュアンスで。"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": 2,
+      "title": "再会の挨拶 / Greeting an old enemy",
+      "character": "John Matrix",
+      "line": "Let off some steam.",
+      "translation": "頭を冷やせ。/ ガス抜きしろ。",
+      "literal": "蒸気を少し逃がせ。",
+      "context": "蒸気機関のように、たまった圧力（怒り・ストレス）を抜く、という比喩表現。",
+      "vocab": [
+        { "word": "steam", "pos": "名詞", "meaning": "蒸気", "note": "let off steam で『ストレス発散する』というイディオム。" },
+        { "word": "let off", "pos": "句動詞", "meaning": "放出する／見逃す", "note": "let someone off で『（罰などを）大目に見る』の意味にもなる。" }
+      ],
+      "usage_notes": [
+        "let off steam は超頻出のイディオム。「ストレスを発散する」という意味で日常会話で安全に使えます。例：I go to the gym to let off steam.（ストレス発散にジムへ行く）",
+        "映画ではダジャレ＋脅しの二重の意味で使われています。実生活では純粋に『発散する』の意味でどうぞ。"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": 3,
+      "title": "決意のひと言 / Resolve",
+      "character": "John Matrix",
+      "line": "Don't disturb my friend, he's dead tired.",
+      "translation": "友達を起こすな、死ぬほど疲れてるんだ。",
+      "literal": "私の友人を邪魔するな、彼はひどく疲れている。",
+      "context": "倒した相手を座席に座らせ、まるで眠っているかのように見せかけて言うブラックジョーク。",
+      "vocab": [
+        { "word": "disturb", "pos": "動詞", "meaning": "邪魔する／かき乱す", "note": "Do not disturb は『起こさないで／邪魔しないで』。ホテルのドアにかけるカードの表現でおなじみ。" },
+        { "word": "dead tired", "pos": "形容詞句", "meaning": "ひどく疲れた", "note": "この dead は『死ぬほど＝とても』を表す強調。dead serious（大真面目）なども同じ用法。" }
+      ],
+      "usage_notes": [
+        "dead tired は『くたくた』というカジュアルな強調表現で日常的に使えます。例：I'm dead tired after work.（仕事のあとへとへとだ）",
+        "dead + 形容詞 で『すごく〜』。dead easy（超簡単）, dead wrong（完全に間違い）など。フォーマルな場では avoid 推奨。",
+        "Do not disturb は依頼の定番。Please don't disturb me while I'm working.（仕事中は邪魔しないで）"
+      ],
+      "difficulty": 2
+    }
+  ]
+}
